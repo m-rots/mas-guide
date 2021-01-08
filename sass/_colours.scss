@@ -1,0 +1,24 @@
+::selection {
+    color: var(--bg-colour);
+    background: var(--accent-colour);
+}
+
+:root {
+    --font-colour: #1f2937;
+    --accent-colour: #FC6F3C;
+    --bg-colour: #ffffff;
+
+    --code-colour: #ffffff;
+    --code-bg-colour: #3D59E9;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-colour: #ffffff;
+        --accent-colour: #FC6F3C;
+        --bg-colour: #1f2937;
+
+        --code-colour: #1f2937;
+        --code-bg-colour: #E4CFF7;
+    }
+}

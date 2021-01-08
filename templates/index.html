@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }}{% endblock title %}
+
+{% block description %}{{ section.description }}{% endblock description %}
+
+{% block content %}
+<header>
+    <h1>Project MAS</h1>
+</header>
+<main>
+    {{ section.content | safe }}
+
+    {% for page in section.pages %}
+    <section>
+        <h2>
+            <a class="classy" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+        </h2>
+    </section>
+    {% endfor %}
+</main>
+{% endblock content %}
